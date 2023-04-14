@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <label for="a">A:</label>
+        <input type="number" id="a">
+
+        <label for="b">B:</label>
+        <input type="number" id="b">
+
+        <div class="result" style="border: 1px solid black;display: inline-block; min-width: 100px; height: 50px;"></div>
+
+        <div class="buttons">
+            <button class="button" data-operation="add">+</button>
+            <button class="button" data-operation="subtract">-</button>
+            <button class="button" data-operation="multiply">*</button>
+            <button class="button" data-operation="divide">/</button>
+        </div>
+    </div>
+
+    <script src="{% static 'webapp/scripts/index.js' %}"></script>
+</body>
+</html>
