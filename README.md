@@ -1,4 +1,2 @@
-## Configuration
-
-admin: root <br>
-password: root
+Чтобы отправить POST запрос через 'POSTMAN'
+нужно добавить в HEADER csrf_token 
